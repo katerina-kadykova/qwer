@@ -28,7 +28,7 @@ tg.MainButton.show();
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
 tg.sendData(item);
 });
-web_app=WebAppInfo(url="https://zxcomegalul.github.io/LabInterface")
+web_app=WebAppInfo(url="https://katerina-kadykova.github.io/qwer/")
 keyboard = ReplyKeyboardMarkup(
 keyboard=[
 [KeyboardButton(text="Знаки зодиака", web_app=web_app)]
