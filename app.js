@@ -8,7 +8,7 @@ let item = "";
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 
-tg.MainButton.setText("Вывести информацию по овену");
+tg.MainButton.setText("Вывести информацию по чикенбургеру");
 
 btn1.addEventListener("click", function () {
   if (tg.MainButton.isVisible) {
@@ -25,7 +25,7 @@ btn2.addEventListener("click", function () {
     tg.MainButton.hide();
   }
   else {
-    tg.MainButton.setText("Вывести информацию по тельцу");
+    tg.MainButton.setText("Вывести информацию по чикен премьеру");
     item = "2";
     tg.MainButton.show();
   }
