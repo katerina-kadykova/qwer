@@ -7,7 +7,6 @@ tg.MainButton.color = "#2cab37";
 let item = "";
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
-let btn3 = document.getElementById("btn3");
 
 tg.MainButton.setText("Вывести информацию по чикенбургеру");
 
@@ -32,16 +31,6 @@ btn2.addEventListener("click", function () {
   }
 });
 
-btn3.addEventListener("click", function () {
-  if (tg.MainButton.isVisible) {
-    tg.MainButton.hide();
-  }
-  else {
-    tg.MainButton.setText("Вывести информацию по биг спешиалу");
-    item = "3";
-    tg.MainButton.show();
-  }
-});
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
   tg.sendData(item);
